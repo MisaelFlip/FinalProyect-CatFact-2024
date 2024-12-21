@@ -1,10 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #de1515;
-  }
-  
   header {
     background-color: #070000;
     color: white;
@@ -32,6 +25,7 @@ body {
     background-color: white;
     padding: 1rem;
     text-align: center;
+    border-radius: 50px;
   }
   
   button#load-more {
@@ -48,3 +42,60 @@ body {
     background-color: #070000;
   }
   
+html, body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} 
+
+.load-more-btn {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-header {
+  background: linear-gradient(90deg, #070000, #333);
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.main-footer {
+  background: #070000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
