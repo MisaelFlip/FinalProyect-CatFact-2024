@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   
-    // Función para traducir texto usando LibreTranslate
+    // Función para traducir texto usando Mymemory Traslate
     async function translateText(text) {
         try {
           const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|es`);
